@@ -1133,23 +1133,27 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 8px;
     }
     .timeline {
-        max-width: none;
+        max-width: 100vw;
         width: 100vw;
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 0;
+        overflow-x: hidden;
+    }
+    .timeline::before {
+        left: 8px;
+        width: 3px;
+        transform: none;
     }
     .timeline-item {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        margin-bottom: 32px;
     }
     .timeline-content.card-header-layout {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 18px 0;
-        border-radius: 18px;
-        box-sizing: border-box;
+        margin: 0 0 0 24px;
+        padding: 18px 8px;
+        border-radius: 14px;
+        min-width: 0;
+        width: calc(100vw - 40px);
+        max-width: 100vw;
     }
     .profile-card {
         padding: 16px;
@@ -1159,11 +1163,19 @@ h1, h2, h3, h4, h5, h6 {
         box-sizing: border-box;
     }
     .project-card {
-        border-radius: 18px;
-        padding: 16px 8px;
-        min-width: 0;
+        padding: 10px 4px;
+        border-radius: 12px;
         width: 100%;
+        min-width: 0;
+        max-width: 100vw;
         box-sizing: border-box;
+    }
+    .project-image {
+        height: 120px;
+        font-size: 2.5rem;
+    }
+    .project-content {
+        padding: 12px 4px;
     }
     .skills-grid {
         grid-template-columns: 1fr;
@@ -1176,6 +1188,11 @@ h1, h2, h3, h4, h5, h6 {
     .footer-content {
         flex-direction: column;
         text-align: center;
+        gap: 8px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
     }
     .hero-content {
@@ -1204,23 +1221,24 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 2px;
     }
     .timeline {
-        max-width: none;
+        max-width: 100vw;
         width: 100vw;
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 0;
+    }
+    .timeline::before {
+        left: 8px;
+        width: 3px;
+        transform: none;
     }
     .timeline-item {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        margin-bottom: 32px;
     }
     .timeline-content.card-header-layout {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 8px 0;
-        border-radius: 12px;
-        box-sizing: border-box;
+        margin: 0 0 0 8px;
+        padding: 10px 2px;
+        border-radius: 8px;
+        width: calc(100vw - 16px);
     }
     .profile-card, .project-card {
         width: 100%;
@@ -1355,4 +1373,154 @@ h1, h2, h3, h4, h5, h6 {
 
 .stat-item p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        background: rgba(10,10,10,0.98);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        display: none;
+        z-index: 999;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 18px 24px;
+        font-size: 1.1rem;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 1rem;
+        padding: 16px 12px;
+    }
+}
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Timeline vertical stacking and overflow fix */
+@media (max-width: 768px) {
+    .timeline {
+        max-width: 100vw;
+        width: 100vw;
+        margin: 0;
+        padding: 0 0 0 0;
+        overflow-x: hidden;
+    }
+    .timeline::before {
+        left: 8px;
+        width: 3px;
+        transform: none;
+    }
+    .timeline-item {
+        margin-bottom: 32px;
+    }
+    .timeline-content.card-header-layout {
+        margin: 0 0 0 24px;
+        padding: 18px 8px;
+        border-radius: 14px;
+        min-width: 0;
+        width: calc(100vw - 40px);
+        max-width: 100vw;
+    }
+    .timeline-header-row {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .timeline-content.card-header-layout {
+        margin: 0 0 0 8px;
+        padding: 10px 2px;
+        border-radius: 8px;
+        width: calc(100vw - 16px);
+    }
+}
+
+/* Project card stacking and overflow fix */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .project-card {
+        padding: 10px 4px;
+        border-radius: 12px;
+        width: 100%;
+        min-width: 0;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+    .project-image {
+        height: 120px;
+        font-size: 2.5rem;
+    }
+    .project-content {
+        padding: 12px 4px;
+    }
+}
+
+/* Contact section stacking */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .contact-form {
+        padding: 18px 6px;
+        border-radius: 12px;
+    }
+    .contact-info {
+        padding: 0 2px;
+    }
+}
+
+/* Footer links and text center on mobile */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* Touch-friendly buttons and links */
+.btn, .nav-link, .social-icon, .contact-item, .back-to-top {
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+}
+
+/* Ensure all cards and containers are box-sizing border-box */
+*, *::before, *::after {
+    box-sizing: border-box;
 } 
