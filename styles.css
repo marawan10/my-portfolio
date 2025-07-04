@@ -686,7 +686,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 200px;
     margin-bottom: 30px;
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     transition: box-shadow 0.3s, border 0.3s;
@@ -1128,133 +1128,113 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+    .container {
+        max-width: 100vw;
+        padding: 0 8px;
     }
-
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: var(--bg-primary);
+    .timeline {
+        max-width: none;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .timeline-item {
         width: 100%;
-        text-align: center;
-        transition: var(--transition-medium);
-        border-top: 1px solid var(--border-color);
-        padding: 20px 0;
+        margin: 0;
+        padding: 0;
     }
-
-    .nav-menu.active {
-        left: 0;
+    .timeline-content.card-header-layout {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 18px 0;
+        border-radius: 18px;
+        box-sizing: border-box;
     }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
+    .profile-card {
+        padding: 16px;
+        border-radius: 18px;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
-
-    .hero-title {
-        font-size: 2.5rem;
+    .project-card {
+        border-radius: 18px;
+        padding: 16px 8px;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
-
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 50px;
-        margin-right: 0;
-        padding-left: 30px;
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .timeline-icon {
-        left: 20px;
-        transform: translate(-50%, -50%);
-    }
-
-    .contact-content {
+    .about-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 16px;
     }
-
     .footer-content {
         flex-direction: column;
         text-align: center;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .timeline-content.card-header-layout {
-        padding: 30px 10px;
-        max-width: 98vw;
-    }
-    .timeline-header-row {
-        flex-direction: column;
-        align-items: flex-start;
         gap: 10px;
     }
-    .timeline-icon-flex {
-        min-height: 45px;
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 16px;
+        padding: 0 4px;
     }
-    .timeline-icon-flex i {
-        width: 45px;
-        height: 45px;
-        font-size: 1.2rem;
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+        padding: 12px 0;
     }
-    .timeline-header-main h3 {
-        font-size: 1.2rem;
+    .section-title {
+        font-size: 1.3rem;
+        padding: 0 2px;
+    }
+    .navbar {
+        padding: 0 2px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
+    .container {
+        padding: 0 2px;
     }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
+    .timeline {
+        max-width: none;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn {
+    .timeline-item {
         width: 100%;
-        max-width: 250px;
+        margin: 0;
+        padding: 0;
     }
-
-    .contact-form {
-        padding: 20px;
+    .timeline-content.card-header-layout {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 8px 0;
+        border-radius: 12px;
+        box-sizing: border-box;
     }
-
-    .social-icons {
-        justify-content: center;
+    .profile-card, .project-card {
+        width: 100%;
+        max-width: none;
+        padding: 8px 2px;
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+    .section-title {
+        font-size: 1.1rem;
+    }
+    .btn {
+        font-size: 0.95rem;
+        padding: 10px 0;
     }
 }
 
