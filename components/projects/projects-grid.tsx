@@ -191,17 +191,18 @@ export function ProjectsGrid() {
                     <div className="text-center space-y-6">
                       {project.image ? (
                         <motion.div
-                          whileHover={{ scale: 1.05 }}
-                          className="w-40 h-40 mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20"
-                        >
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            width={320}
-                            height={320}
-                            className="w-full h-full object-contain p-2"
-                          />
-                        </motion.div>
+  whileHover={{ scale: 1.05 }}
+  className="w-80 h-60 mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20"
+>
+  <Image
+    src={project.image}
+    alt={project.title}
+    width={600}
+    height={400}
+    className="w-full h-full object-contain p-4"
+  />
+</motion.div>
+
                       ) : (
                         <motion.div
                           whileHover={{ scale: 1.1, rotate: 5 }}
