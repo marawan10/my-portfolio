@@ -197,8 +197,8 @@ export function ProjectsGrid() {
                           <Image
                             src={project.image}
                             alt={project.title}
-                            width={160}
-                            height={160}
+                            width={320}
+                            height={320}
                             className="w-full h-full object-contain p-2"
                           />
                         </motion.div>
