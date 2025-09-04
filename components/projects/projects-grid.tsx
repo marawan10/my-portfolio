@@ -119,7 +119,57 @@ export function ProjectsGrid() {
         completion: "100%",
         rating: "4.9/5"
       }
-    }
+    },
+    // ...existing code...
+    {
+      id: "matchee",
+      title: "Matchee ⚽ - Live Football Tracking Platform",
+      description: "A modern, powerful live match tracking platform with real-time updates, PWA support, multilingual interface, and advanced analytics. Built to rival YallaShot and 365Score. 90% completed.",
+      longDescription: "Matchee is a comprehensive football live match tracking platform featuring real-time updates, beautiful UI/UX, dark/light mode, interactive animations, and advanced analytics. Designed for mobile-first use, it offers personalization, notifications, and a cutting-edge experience.",
+      icon: Zap,
+      color: "from-yellow-500 to-orange-500",
+      category: ["frontend", "fullstack"],
+      status: "In Progress",
+      featured: true,
+      tech: [
+        "Next.js 14",
+        "TypeScript",
+        "TailwindCSS",
+        "shadcn/ui",
+        "Framer Motion",
+        "Lucide React",
+        "API-Football",
+        "Glassmorphism",
+        "Neumorphism"
+      ],
+      features: [
+        "⚽ Live Match Tracking with animated updates",
+        "🎨 Beautiful UI/UX with smooth, engaging interactions",
+        "🌗 Dark/Light Mode with seamless transitions",
+        "🎉 Interactive Animations for goals, cards, and scores",
+        "📱 Responsive mobile-first design",
+        "🔔 Real-time updates via WebSocket & polling fallback",
+        "⭐ Personalization: favorite teams, custom feeds, notifications",
+        "🌍 Multilingual interface",
+        "📊 Advanced analytics dashboard",
+        "🖼️ Glassmorphism & Neumorphism design effects"
+      ],
+      highlights: [
+        "Real-time football coverage",
+        "PWA support",
+        "Advanced UI/UX",
+        "Mobile-first design"
+      ],
+      links: {
+        github: "https://github.com/marawan10/Matchee"
+      },
+      image: "/assets/Matchee.png",
+      metrics: {
+        users: "N/A",
+        completion: "90%",
+        rating: "N/A"
+      }
+    },
   ]
 
   return (
