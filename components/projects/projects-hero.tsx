@@ -8,7 +8,7 @@ export function ProjectsHero() {
   const stats = [
     { icon: Code, label: "Projects Completed", value: "10+" },
     { icon: Rocket, label: "Technologies Used", value: "15+" },
-    { icon: Star, label: "Featured Projects", value: "3" },
+    { icon: Star, label: "Featured Projects", value: "4" },
   ]
 
   return (
