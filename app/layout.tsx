@@ -28,6 +28,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Marwan Mokhtar Kamel" }],
   creator: "Marwan Mokhtar Kamel",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -61,6 +66,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* ✅ manual favicon fallback */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
