@@ -74,8 +74,7 @@ export function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center space-x-2 text-sm text-muted-foreground"
               >
-                <Sparkles className="w-4 h-4 text-primary" />
-              </motion.div>
+              
 
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
