@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function ExperienceHero() {
   const stats = [
-    { icon: Briefcase, label: "Years Experience", value: "3+" },
+    { icon: Briefcase, label: "Years Experience", value: "2+" },
     { icon: Award, label: "Roles", value: "2" },
     { icon: Calendar, label: "Current Position", value: "2024" },
     { icon: MapPin, label: "Location", value: "Remote" },
