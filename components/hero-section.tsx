@@ -73,7 +73,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex items-center space-x-2 text-sm text-muted-foreground"
-              >
+              />
               
 
               <motion.h1
