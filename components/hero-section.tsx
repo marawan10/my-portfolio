@@ -233,11 +233,11 @@ export function HeroSection() {
                   className="grid grid-cols-3 gap-4 pt-4 border-t border-border"
                 >
                   <div className="text-center">
-                    <p className="text-lg font-bold text-gradient">3+</p>
+                    <p className="text-lg font-bold text-gradient">2+</p>
                     <p className="text-xs text-muted-foreground">Years Exp</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-lg font-bold text-gradient">15+</p>
+                    <p className="text-lg font-bold text-gradient">10+</p>
                     <p className="text-xs text-muted-foreground">Projects</p>
                   </div>
                   <div className="text-center">
