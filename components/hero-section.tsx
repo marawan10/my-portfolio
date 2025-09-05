@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Calendar, Download, Sparkles } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Facebook, Instagram , MapPin, Calendar, Download, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
@@ -9,10 +9,12 @@ import Image from "next/image"
 
 export function HeroSection() {
   const socialLinks = [
-    { icon: Github, href: "https://github.com/marawan10", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/marawanmokhtar/", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:marawanmokhtar10@gmail.com", label: "Email" },
-  ]
+  { icon: Github, href: "https://github.com/marawan10", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/marawanmokhtar/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:marawanmokhtar10@gmail.com", label: "Email" },
+  { icon: Facebook, href: "https://www.facebook.com/yourusername", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/yourusername", label: "Instagram" },
+]
 
   // Fixed values to prevent hydration mismatch
   const floatingElements = [
