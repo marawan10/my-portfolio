@@ -18,9 +18,9 @@ export function HeroSection() {
 
   // Fixed values to prevent hydration mismatch
   const floatingElements = [
-    { id: 0, size: 120, x: 15, y: 20, duration: 25 },
+    //{ id: 0, size: 120, x: 15, y: 20, duration: 25 },
     { id: 1, size: 80, x: 85, y: 70, duration: 18 },
-    //{ id: 2, size: 100, x: 60, y: 10, duration: 22 },
+    { id: 2, size: 100, x: 60, y: 10, duration: 22 },
     { id: 3, size: 90, x: 25, y: 85, duration: 20 },
     { id: 4, size: 110, x: 75, y: 45, duration: 28 },
     { id: 5, size: 70, x: 40, y: 60, duration: 15 },
