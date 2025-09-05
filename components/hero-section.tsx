@@ -12,8 +12,8 @@ export function HeroSection() {
   { icon: Github, href: "https://github.com/marawan10", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/marawanmokhtar/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:marawanmokhtar10@gmail.com", label: "Email" },
-  { icon: Facebook, href: "https://www.facebook.com/yourusername", label: "Facebook" },
-  { icon: Instagram, href: "https://www.instagram.com/yourusername", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/MarawanMokhtar101", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/marawan_mokhtar10", label: "Instagram" },
 ]
 
   // Fixed values to prevent hydration mismatch
