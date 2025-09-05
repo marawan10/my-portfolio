@@ -9,7 +9,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   const socialLinks = [
-    { icon: Github, href: "https://github.com/marawanmokhtar", label: "GitHub" },
+    { icon: Github, href: "https://github.com/marawan10", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/marawanmokhtar/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:marawanmokhtar10@gmail.com", label: "Email" },
   ]
