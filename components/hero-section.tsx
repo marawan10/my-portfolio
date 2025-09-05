@@ -75,7 +75,6 @@ export function HeroSection() {
                 className="flex items-center space-x-2 text-sm text-muted-foreground"
               >
                 <Sparkles className="w-4 h-4 text-primary" />
-                <span>Welcome to my portfolio</span>
               </motion.div>
 
               <motion.h1
