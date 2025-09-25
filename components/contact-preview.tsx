@@ -5,7 +5,10 @@ import { ArrowRight, Mail, Phone, MapPin, Linkedin, Github, Instagram } from "lu
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
+<<<<<<< HEAD
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 
 export function ContactPreview() {
   const contactInfo = [
@@ -24,6 +27,7 @@ export function ContactPreview() {
       color: "from-green-500 to-emerald-500"
     },
     {
+<<<<<<< HEAD
       icon: WhatsAppIcon,
       label: "WhatsApp",
       value: "+20 106 745 3557",
@@ -31,6 +35,8 @@ export function ContactPreview() {
       color: "from-green-600 to-green-400"
     },
     {
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
       icon: MapPin,
       label: "Location",
       value: "Al Minya, Egypt",

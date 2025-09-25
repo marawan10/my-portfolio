@@ -1,12 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
+<<<<<<< HEAD
 import { ExternalLink, Github, Globe, Home, Zap, CheckCircle, Clock, Pause, Bot, HelpCircle, Activity } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { useState, useRef } from "react"
+=======
+import { ExternalLink, Github, Calendar, Users, Zap, Globe, Database, Bot, HelpCircle, Home } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 
 export function ProjectsGrid() {
   const projects = [
@@ -34,7 +42,10 @@ export function ProjectsGrid() {
         "Modern tech stack"
       ],
       links: {
+<<<<<<< HEAD
         github: "https://github.com/marawan10/deeb-blue",
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
         live: "https://deep-blue-xi.vercel.app"
       },
       metrics: {
@@ -84,6 +95,7 @@ export function ProjectsGrid() {
       }
     },
     {
+<<<<<<< HEAD
       id: "calories-tracker",
       title: "Calories Tracker - Nutrition Management Platform",
       description: "A comprehensive nutrition tracking application with React frontend and Node.js backend. Features user authentication, calorie tracking, nutrition analysis, progress visualization, and export functionality for PDF/DOCX reports.",
@@ -124,6 +136,8 @@ export function ProjectsGrid() {
       }
     },
     {
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
       id: "homiee",
       title: "Homiee Real Estate Management System",
       description: "Comprehensive web-based platform for property transactions built with ASP.NET Core and SQL Server. Features dynamic price negotiation, contract management, secure authentication, and AI-powered chatbot assistance.",
@@ -214,6 +228,7 @@ export function ProjectsGrid() {
     },
   ]
 
+<<<<<<< HEAD
   // Group projects by status
   const groupedProjects = {
     "Completed": projects.filter(p => p.status === "Completed"),
@@ -412,6 +427,170 @@ export function ProjectsGrid() {
             </motion.div>
           )
         })}
+=======
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="space-y-12">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              <Card className="overflow-hidden hover-lift group">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  {/* Project Image/Icon Section */}
+                  <div className={`relative bg-gradient-to-br ${project.color} p-12 flex items-center justify-center`}>
+                    <div className="text-center space-y-6">
+                      {project.image ? (
+                        <motion.div
+  whileHover={{ scale: 1.05 }}
+  className="w-80 h-60 mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20"
+>
+  <Image
+    src={project.image}
+    alt={project.title}
+    width={600}
+    height={400}
+    className="w-full h-full object-contain p-4"
+  />
+</motion.div>
+
+                      ) : (
+                        <motion.div
+                          whileHover={{ scale: 1.1, rotate: 5 }}
+                          className="w-24 h-24 mx-auto bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center"
+                        >
+                          <project.icon className="w-12 h-12 text-white" />
+                        </motion.div>
+                      )}
+                      <div className="space-y-2">
+                        <Badge 
+                          variant="secondary" 
+                          className={`${project.status === "Completed" 
+                            ? "bg-green-100 text-green-700 dark:bg-green-900/20 dark:text-green-400"
+                            : "bg-blue-100 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400"
+                          }`}
+                        >
+                          {project.status}
+                        </Badge>
+                        {project.featured && (
+                          <Badge className="bg-yellow-100 text-yellow-700 dark:bg-yellow-900/20 dark:text-yellow-400">
+                            ⭐ Featured
+                          </Badge>
+                        )}
+                      </div>
+                      
+                      {/* Metrics */}
+                      <div className="grid grid-cols-3 gap-4 text-center">
+                        <div className="space-y-1">
+                          <p className="text-2xl font-bold text-white">{project.metrics.users}</p>
+                          <p className="text-xs text-white/80">Users</p>
+                        </div>
+                        <div className="space-y-1">
+                          <p className="text-2xl font-bold text-white">{project.metrics.completion}</p>
+                          <p className="text-xs text-white/80">Complete</p>
+                        </div>
+                        <div className="space-y-1">
+                          <p className="text-2xl font-bold text-white">{project.metrics.rating}</p>
+                          <p className="text-xs text-white/80">Rating</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Project Details Section */}
+                  <div className="p-8 space-y-6">
+                    <CardHeader className="p-0">
+                      <CardTitle className="text-2xl mb-2">{project.title}</CardTitle>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {project.longDescription}
+                      </p>
+                    </CardHeader>
+
+                    <CardContent className="p-0 space-y-6">
+                      {/* Key Highlights */}
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
+                          Key Highlights
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {project.highlights.map((highlight, idx) => (
+                            <Badge key={idx} variant="outline" className="text-xs">
+                              {highlight}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Tech Stack */}
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
+                          Technology Stack
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {project.tech.slice(0, 6).map((tech, idx) => (
+                            <Badge key={idx} className="text-xs bg-gradient-to-r from-blue-500/10 to-purple-500/10 border-blue-500/20">
+                              {tech}
+                            </Badge>
+                          ))}
+                          {project.tech.length > 6 && (
+                            <Badge variant="secondary" className="text-xs">
+                              +{project.tech.length - 6} more
+                            </Badge>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Key Features (First 4) */}
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
+                          Key Features
+                        </h4>
+                        <ul className="space-y-2">
+                          {project.features.slice(0, 4).map((feature, idx) => (
+                            <li key={idx} className="text-sm text-muted-foreground flex items-start space-x-2">
+                              <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 flex-shrink-0" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                          {project.features.length > 4 && (
+                            <li className="text-sm text-muted-foreground">
+                              +{project.features.length - 4} more features...
+                            </li>
+                          )}
+                        </ul>
+                      </div>
+
+                      {/* Action Buttons */}
+                      <div className="flex items-center space-x-4 pt-4">
+                        <Button asChild variant="gradient" className="group">
+                          <a href={project.links.live} target="_blank" rel="noopener noreferrer">
+                            <Globe className="w-4 h-4 mr-2" />
+                            Live Demo
+                            <ExternalLink className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
+                          </a>
+                        </Button>
+                        {project.links.github && (
+                          <Button asChild variant="outline" className="group">
+                            <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                              <Github className="w-4 h-4 mr-2" />
+                              Source Code
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    </CardContent>
+                  </div>
+                </div>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 
         {/* Call to Action */}
         <motion.div
@@ -419,9 +598,15 @@ export function ProjectsGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
+<<<<<<< HEAD
           className="container mx-auto px-4 sm:px-6 lg:px-8"
         >
           <Card className="glass max-w-2xl mx-auto text-center">
+=======
+          className="text-center mt-16"
+        >
+          <Card className="glass max-w-2xl mx-auto">
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4">
                 Interested in Working Together?

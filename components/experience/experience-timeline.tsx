@@ -13,8 +13,13 @@ export function ExperienceTimeline() {
       title: "AI Coding Evaluator",
       company: "Outlier.ai",
       location: "Remote",
+<<<<<<< HEAD
       period: "2024",
       type: "Contract",
+=======
+      period: "2024 - Present",
+      type: "Full-time",
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
       icon: Code,
       color: "from-blue-500 to-cyan-500",
       description: "Evaluating and improving AI-generated code across multiple programming languages and frameworks, focusing on functionality, readability, and best practices.",
@@ -37,8 +42,13 @@ export function ExperienceTimeline() {
       title: "AI Language Model Reviewer",
       company: "Outlier.ai",
       location: "Remote", 
+<<<<<<< HEAD
       period: "2024",
       type: "Contract",
+=======
+      period: "2024 - Present",
+      type: "Full-time",
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
       icon: Brain,
       color: "from-purple-500 to-pink-500",
       description: "Specializing in evaluating AI-generated content in mathematics and programming contexts, ensuring clarity, logic, and instructional value.",
@@ -96,7 +106,11 @@ export function ExperienceTimeline() {
             Career <span className="text-gradient">Timeline</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
+<<<<<<< HEAD
             My professional journey from computer science student to full-stack software engineer
+=======
+            My professional journey from computer science student to AI specialist
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
           </p>
         </motion.div>
 

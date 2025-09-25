@@ -48,25 +48,41 @@ export function Navigation() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<<<<<<< HEAD
         <div className="flex justify-between items-center h-14 sm:h-16">
+=======
+        <div className="flex justify-between items-center h-16">
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
+<<<<<<< HEAD
               className="text-lg sm:text-xl font-bold text-gradient font-mono"
+=======
+              className="text-xl font-bold text-gradient font-mono"
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             >
               MM
             </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
+<<<<<<< HEAD
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+=======
+          <div className="hidden md:flex items-center space-x-8">
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
+<<<<<<< HEAD
                   "relative px-2 lg:px-3 py-2 text-sm font-medium transition-colors hover:text-primary",
+=======
+                  "relative px-3 py-2 text-sm font-medium transition-colors hover:text-primary",
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                   pathname === item.href
                     ? "text-primary"
                     : "text-muted-foreground"
@@ -84,12 +100,20 @@ export function Navigation() {
           </div>
 
           {/* Theme Toggle & Mobile Menu */}
+<<<<<<< HEAD
           <div className="flex items-center space-x-2 sm:space-x-4">
+=======
+          <div className="flex items-center space-x-4">
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+<<<<<<< HEAD
               className="w-8 h-8 sm:w-9 sm:h-9"
+=======
+              className="w-9 h-9"
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             >
               {theme === "dark" ? (
                 <Sun className="h-4 w-4" />
@@ -102,7 +126,11 @@ export function Navigation() {
             <Button
               variant="ghost"
               size="icon"
+<<<<<<< HEAD
               className="md:hidden w-8 h-8 sm:w-9 sm:h-9"
+=======
+              className="md:hidden w-9 h-9"
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
@@ -118,9 +146,15 @@ export function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
+<<<<<<< HEAD
             className="md:hidden glass border-t border-border/40 backdrop-blur-md"
           >
             <div className="px-4 py-3 space-y-1">
+=======
+            className="md:hidden glass border-t border-border/40"
+          >
+            <div className="px-4 py-4 space-y-2">
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               {navigation.map((item) => (
                 <Link
                   key={item.name}

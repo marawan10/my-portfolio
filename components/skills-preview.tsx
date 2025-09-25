@@ -1,7 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
+<<<<<<< HEAD
 import { ArrowRight, Code2, Database, Globe, Languages } from "lucide-react"
+=======
+import { ArrowRight, Code2, Database, Brain, Languages } from "lucide-react"
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
@@ -21,9 +25,15 @@ export function SkillsPreview() {
       color: "from-green-500 to-emerald-500"
     },
     {
+<<<<<<< HEAD
       icon: Globe,
       title: "Frontend & Web",
       skills: ["React (85%)", "Next.js (88%)", "Tailwind CSS (90%)", "Responsive Design"],
+=======
+      icon: Brain,
+      title: "AI & Machine Learning",
+      skills: ["NLP (85%)", "Model Evaluation (90%)", "Prompt Engineering (88%)", "AI Chatbots"],
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
       color: "from-purple-500 to-pink-500"
     },
     {

@@ -4,7 +4,10 @@ import { motion } from "framer-motion"
 import { Github, Linkedin, Facebook, Instagram, Calendar, Clock, Globe, Mail } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+<<<<<<< HEAD
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 
 export function ContactInfo() {
   const socialLinks = [
@@ -120,6 +123,7 @@ export function ContactInfo() {
                       </a>
                     </Button>
                     <Button asChild variant="outline" className="flex-1">
+<<<<<<< HEAD
                       <a href="https://wa.me/201067453557" target="_blank" rel="noopener noreferrer">
                         <WhatsAppIcon className="w-4 h-4 mr-2" />
                         WhatsApp
@@ -128,17 +132,22 @@ export function ContactInfo() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3 mt-3">
                     <Button asChild variant="outline" className="flex-1">
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                       <a href="https://www.linkedin.com/in/marawanmokhtar/" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="w-4 h-4 mr-2" />
                         LinkedIn
                       </a>
                     </Button>
+<<<<<<< HEAD
                     <Button asChild variant="outline" className="flex-1">
                       <a href="tel:+201067453557">
                         <Clock className="w-4 h-4 mr-2" />
                         Call Me
                       </a>
                     </Button>
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                   </div>
                 </div>
               </CardContent>

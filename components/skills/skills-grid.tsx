@@ -49,6 +49,10 @@ export function SkillsGrid() {
       color: "from-indigo-500 to-purple-500",
       skills: [
         { name: "Git", level: 85, description: "Version control, collaboration" },
+<<<<<<< HEAD
+=======
+        { name: "Docker", level: 70, description: "Containerization, deployment" },
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
         { name: "Vercel", level: 80, description: "Deployment, serverless functions" },
         { name: "VS Code", level: 95, description: "Extensions, debugging, productivity" },
         { name: "Postman", level: 85, description: "API testing, documentation" },

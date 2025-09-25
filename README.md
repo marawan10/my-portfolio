@@ -96,6 +96,21 @@ vercel --prod
 - **Contact Form**: Interactive contact form with validation
 - **Experience Timeline**: Professional journey visualization
 
+<<<<<<< HEAD
+=======
+## 🌟 Featured Projects
+
+### DeepBlue - Bilingual AI Learning Platform
+- **Tech Stack**: Next.js, TypeScript, Prisma, PostgreSQL
+- **Features**: Bilingual support, AI chatbot, personalized learning
+- **Status**: Production-ready
+
+### TechQuiz Pro - Technical Assessment Platform
+- **Tech Stack**: Vanilla JavaScript, HTML5, CSS3
+- **Features**: Multiple topics, real-time progress, analytics
+- **Status**: Live and functional
+
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 ## 📱 Responsive Design
 
 The portfolio is fully responsive and optimized for:

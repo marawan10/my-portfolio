@@ -49,7 +49,11 @@ export function AboutHero() {
             >
               I'm a passionate software engineer with a strong foundation in computer science 
               and expertise in full-stack development. My journey combines academic excellence 
+<<<<<<< HEAD
               with practical experience in building innovative web applications and software solutions.
+=======
+              with practical experience in building innovative solutions and training AI models.
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             </motion.p>
 
             <motion.div
@@ -100,7 +104,11 @@ export function AboutHero() {
                   <div className="space-y-2">
                     <h3 className="text-xl font-semibold">Marwan Mokhtar Kamel</h3>
                     <p className="text-muted-foreground">Software Engineer</p>
+<<<<<<< HEAD
                     <p className="text-sm text-muted-foreground">Available for Opportunities</p>
+=======
+                    <p className="text-sm text-muted-foreground">AI Coding Evaluator at Outlier.ai</p>
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                   </div>
                   <div className="flex justify-center">
                     <span className="px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-sm">

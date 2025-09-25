@@ -8,7 +8,11 @@ export function ExperienceHero() {
   const stats = [
     { icon: Briefcase, label: "Years Experience", value: "2+" },
     { icon: Award, label: "Roles", value: "2" },
+<<<<<<< HEAD
     { icon: Calendar, label: "Available", value: "2025" },
+=======
+    { icon: Calendar, label: "Current Position", value: "2024" },
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
     { icon: MapPin, label: "Location", value: "Remote" },
   ]
 
@@ -25,8 +29,13 @@ export function ExperienceHero() {
             Professional <span className="text-gradient">Experience</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+<<<<<<< HEAD
             My journey in software engineering, from academic foundations 
             to professional experience in full-stack development and software solutions.
+=======
+            My journey in software engineering and AI, from academic foundations 
+            to professional excellence in evaluating and improving AI systems.
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
           </p>
         </motion.div>
 
@@ -64,6 +73,7 @@ export function ExperienceHero() {
         >
           <Card className="glass max-w-2xl mx-auto">
             <CardContent className="p-8">
+<<<<<<< HEAD
               <h3 className="text-xl font-semibold mb-4">Current Status</h3>
               <div className="space-y-2">
                 <p className="text-lg font-medium">Full-Stack Software Engineer</p>
@@ -71,6 +81,15 @@ export function ExperienceHero() {
                 <p className="text-muted-foreground">
                   Experienced in building scalable web applications, working with modern technologies, 
                   and delivering high-quality software solutions.
+=======
+              <h3 className="text-xl font-semibold mb-4">Current Role</h3>
+              <div className="space-y-2">
+                <p className="text-lg font-medium">AI Coding Evaluator & Language Model Reviewer</p>
+                <p className="text-primary font-medium">Outlier.ai</p>
+                <p className="text-muted-foreground">
+                  Specializing in evaluating AI-generated code and improving language model performance 
+                  through detailed analysis and structured feedback.
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                 </p>
               </div>
             </CardContent>

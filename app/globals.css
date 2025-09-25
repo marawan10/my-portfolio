@@ -69,10 +69,13 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+<<<<<<< HEAD
   
   html {
     scroll-behavior: smooth;
   }
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 }
 
 @layer utilities {
@@ -99,6 +102,7 @@
   .animate-in {
     @apply animate-fade-in;
   }
+<<<<<<< HEAD
   
   /* Responsive utilities */
   .container-responsive {
@@ -152,4 +156,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+=======
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 }

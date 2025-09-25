@@ -10,7 +10,11 @@ export function AboutPreview() {
   const stats = [
     { icon: Code, label: "Years Experience", value: "3+" },
     { icon: Brain, label: "Programming Languages", value: "5+" },
+<<<<<<< HEAD
     { icon: Users, label: "Projects Completed", value: "10+" },
+=======
+    { icon: Users, label: "AI Tasks Evaluated", value: "100+" },
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
   ]
 
   return (
@@ -27,8 +31,13 @@ export function AboutPreview() {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
+<<<<<<< HEAD
             Computer Science graduate with expertise in full-stack development, 
             modern web technologies, and software engineering practices.
+=======
+            Computer Science graduate with expertise in AI, full-stack development, 
+            and modern software engineering practices.
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
           </p>
         </motion.div>
 
@@ -41,6 +50,7 @@ export function AboutPreview() {
             className="space-y-6"
           >
             <div className="space-y-4">
+<<<<<<< HEAD
               <h3 className="text-2xl font-semibold">Full-Stack Software Engineer</h3>
               <p className="text-muted-foreground leading-relaxed">
                 I'm a Computer Science graduate from Minya University with a strong foundation 
@@ -49,6 +59,17 @@ export function AboutPreview() {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 My expertise spans full-stack development, modern web technologies, and creating 
+=======
+              <h3 className="text-2xl font-semibold">Software Engineer & AI Specialist</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                I'm a Computer Science graduate from Minya University with a strong foundation 
+                in mathematics and programming. Currently working as an AI Coding Evaluator 
+                and Language Model Reviewer at Outlier.ai, where I specialize in evaluating 
+                and improving AI-generated content.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                My expertise spans full-stack development, AI model evaluation, and creating 
+>>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                 innovative software solutions. I'm passionate about building scalable, 
                 user-centric applications that solve real-world problems.
               </p>
