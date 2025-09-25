@@ -3,10 +3,6 @@
 import Link from "next/link"
 import { Github, Linkedin, Mail, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
-<<<<<<< HEAD
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
-=======
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -36,19 +32,10 @@ export function Footer() {
       href: "mailto:marawanmokhtar10@gmail.com",
       icon: Mail,
     },
-<<<<<<< HEAD
-    {
-      name: "WhatsApp",
-      href: "https://wa.me/201067453557",
-      icon: WhatsAppIcon,
-    },
-=======
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
   ]
 
   return (
     <footer className="bg-muted/30 border-t border-border">
-<<<<<<< HEAD
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
@@ -58,17 +45,6 @@ export function Footer() {
               <span className="font-semibold">Marwan Mokhtar</span>
             </Link>
             <p className="text-sm text-muted-foreground text-center sm:text-left">
-=======
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="text-xl font-bold text-gradient font-mono">MM</div>
-              <span className="font-semibold">Marwan Mokhtar</span>
-            </Link>
-            <p className="text-sm text-muted-foreground">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               Software Engineer specializing in AI, full-stack development, and modern web technologies.
             </p>
           </div>
@@ -93,20 +69,9 @@ export function Footer() {
           {/* Contact */}
           <div className="space-y-4">
             <h3 className="font-semibold">Contact</h3>
-<<<<<<< HEAD
             <div className="space-y-2 text-sm text-muted-foreground text-center sm:text-left">
               <p>marawanmokhtar10@gmail.com</p>
               <p>+20 106 745 3557</p>
-              <p>
-                <a href="https://wa.me/201067453557" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  WhatsApp: +20 106 745 3557
-                </a>
-              </p>
-=======
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <p>marawanmokhtar10@gmail.com</p>
-              <p>+20 106 745 3557</p>
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               <p>Al Minya, Egypt</p>
             </div>
           </div>
@@ -114,11 +79,7 @@ export function Footer() {
           {/* Social */}
           <div className="space-y-4">
             <h3 className="font-semibold">Connect</h3>
-<<<<<<< HEAD
             <div className="flex space-x-2 justify-center sm:justify-start">
-=======
-            <div className="flex space-x-2">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               {socialLinks.map((social) => (
                 <Button
                   key={social.name}
@@ -141,16 +102,12 @@ export function Footer() {
           </div>
         </div>
 
-<<<<<<< HEAD
         <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-=======
-        <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-sm text-muted-foreground">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             © {currentYear} Marwan Mokhtar. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center">
+            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> using Next.js
           </p>
         </div>
       </div>
