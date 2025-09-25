@@ -1,28 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail, Facebook, Instagram , MapPin, Calendar, Download, Sparkles } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Facebook, Instagram, MapPin, Calendar, Download, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
-<<<<<<< HEAD
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon"
-=======
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
 
 export function HeroSection() {
   const socialLinks = [
-  { icon: Github, href: "https://github.com/marawan10", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/marawanmokhtar/", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:marawanmokhtar10@gmail.com", label: "Email" },
-<<<<<<< HEAD
-  { icon: WhatsAppIcon, href: "https://wa.me/201067453557", label: "WhatsApp" },
-=======
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
-  { icon: Facebook, href: "https://www.facebook.com/MarawanMokhtar101", label: "Facebook" },
-  { icon: Instagram, href: "https://www.instagram.com/marawan_mokhtar10", label: "Instagram" },
-]
+    { icon: Github, href: "https://github.com/marawan10", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/marawanmokhtar/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:marawanmokhtar10@gmail.com", label: "Email" },
+    { icon: Facebook, href: "https://www.facebook.com/MarawanMokhtar101", label: "Facebook" },
+    { icon: Instagram, href: "https://www.instagram.com/marawan_mokhtar10", label: "Instagram" },
+  ]
 
   // Fixed values to prevent hydration mismatch
   const floatingElements = [
@@ -35,11 +27,7 @@ export function HeroSection() {
   ]
 
   return (
-<<<<<<< HEAD
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
-=======
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
       {/* Dynamic Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/20">
         {/* Animated Background Elements */}
@@ -70,13 +58,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       </div>
 
-<<<<<<< HEAD
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-=======
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -85,34 +68,18 @@ export function HeroSection() {
             className="space-y-8"
           >
             <div className="space-y-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="flex items-center space-x-2 text-sm text-muted-foreground"
-              />
-              
-
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-<<<<<<< HEAD
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
-=======
-                className="text-5xl md:text-7xl font-bold leading-tight"
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               >
                 I'm{" "}
                 <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
                   Marwan
                 </span>
                 <br />
-<<<<<<< HEAD
                 <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-muted-foreground">
-=======
-                <span className="text-3xl md:text-5xl text-muted-foreground">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                   Software Engineer
                 </span>
               </motion.h1>
@@ -121,22 +88,15 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-<<<<<<< HEAD
                 className="text-lg sm:text-xl md:text-2xl text-muted-foreground space-y-2"
-=======
-                className="text-xl md:text-2xl text-muted-foreground space-y-2"
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               >
                 <div className="flex items-center space-x-2">
-                  <span> Software Engineer </span>
+                  <span>Software Engineer</span>
                   <span>•</span>
-                  <span> Full-Stack Developer</span>
+                  <span>Full-Stack Developer</span>
                 </div>
                 <div className="flex items-center space-x-2">
-<<<<<<< HEAD
-=======
-                  <span> AI Evaluator</span>
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
+                  <span>AI Evaluator</span>
                 </div>
               </motion.div>
 
@@ -147,13 +107,8 @@ export function HeroSection() {
                 className="text-lg text-muted-foreground leading-relaxed max-w-lg"
               >
                 Passionate about building innovative solutions with modern technologies. 
-<<<<<<< HEAD
-                Experienced in full-stack development, creating scalable web applications, 
-                and delivering high-quality software solutions.
-=======
                 Currently working as an AI Coding Evaluator at Outlier.ai, providing solutions and 
                 training AI models in programming, mathematics, and languages.
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               </motion.p>
             </div>
 
@@ -162,11 +117,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
-<<<<<<< HEAD
               className="flex flex-col sm:flex-row gap-3 sm:gap-4"
-=======
-              className="flex flex-col sm:flex-row gap-4"
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
             >
               <Button asChild variant="gradient" size="lg" className="group">
                 <Link href="/projects">
@@ -193,15 +144,9 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
-<<<<<<< HEAD
               className="flex flex-wrap items-center gap-4 sm:gap-6"
             >
               <span className="text-sm text-muted-foreground w-full sm:w-auto">Follow me:</span>
-=======
-              className="flex items-center space-x-6"
-            >
-              <span className="text-sm text-muted-foreground">Follow me:</span>
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={social.label}
@@ -211,17 +156,10 @@ export function HeroSection() {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 1.4 + index * 0.1 }}
-<<<<<<< HEAD
                   className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center group hover:scale-110"
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
-=======
-                  className="w-12 h-12 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center group hover:scale-110"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                 </motion.a>
               ))}
             </motion.div>
@@ -232,17 +170,10 @@ export function HeroSection() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-<<<<<<< HEAD
             className="flex justify-center lg:justify-end mt-8 lg:mt-0"
           >
             <Card className="glass max-w-xs sm:max-w-sm w-full hover-lift group">
               <CardContent className="p-4 sm:p-6 lg:p-8 text-center space-y-4 sm:space-y-6">
-=======
-            className="flex justify-center lg:justify-end"
-          >
-            <Card className="glass max-w-sm w-full hover-lift group">
-              <CardContent className="p-8 text-center space-y-6">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                 {/* Profile Image */}
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
@@ -250,23 +181,14 @@ export function HeroSection() {
                   transition={{ duration: 0.8, delay: 0.8 }}
                   className="relative"
                 >
-<<<<<<< HEAD
                   <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 mx-auto relative">
-=======
-                  <div className="w-40 h-40 mx-auto relative">
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full animate-pulse" />
                     <div className="absolute inset-1 bg-background rounded-full flex items-center justify-center">
                       <Image
                         src="/assets/My_Image.png"
                         alt="Marwan Mokhtar"
-<<<<<<< HEAD
                         width={160}
                         height={160}
-=======
-                        width={150}
-                        height={150}
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                         className="rounded-full object-cover"
                         priority
                       />
@@ -300,7 +222,6 @@ export function HeroSection() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 1.2 }}
-<<<<<<< HEAD
                   className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-border"
                 >
                   <div className="text-center">
@@ -313,20 +234,6 @@ export function HeroSection() {
                   </div>
                   <div className="text-center">
                     <p className="text-base sm:text-lg font-bold text-gradient">100%</p>
-=======
-                  className="grid grid-cols-3 gap-4 pt-4 border-t border-border"
-                >
-                  <div className="text-center">
-                    <p className="text-lg font-bold text-gradient">2+</p>
-                    <p className="text-xs text-muted-foreground">Years Exp</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-lg font-bold text-gradient">10+</p>
-                    <p className="text-xs text-muted-foreground">Projects</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-lg font-bold text-gradient">100%</p>
->>>>>>> a5f1d4e4e88306745a301519cac4e0bd541ae528
                     <p className="text-xs text-muted-foreground">Dedicated</p>
                   </div>
                 </motion.div>
