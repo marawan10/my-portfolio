@@ -58,7 +58,7 @@ Mobile
 
 Email: marawanmokhtar10@gmail.com
 
-LinkedIn: linkedin.com/in/marawanmokhtar
+LinkedIn: https://linkedin.com/in/marawanmokhtar
 
 📄 License
 
