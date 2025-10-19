@@ -64,5 +64,3 @@ LinkedIn: linkedin.com/in/marawanmokhtar
 
 This project is open source under the MIT License
 .
-
-Built with ❤️ by Marawan Mokhtar
