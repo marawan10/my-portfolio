@@ -134,9 +134,15 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="lg" className="group">
-                <a href="/assets/Marwan_Mokhtar.pdf" download="Marwan_Mokhtar_CV.pdf">
+                <a href="/assets/Marwan_Mokhtar_CV.pdf" download="Marwan_Mokhtar_CV.pdf">
                   <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
                   Download CV
+                </a>
+              </Button>
+              <Button asChild variant="ghost" size="lg" className="group">
+                <a href="/assets/Marwan_Mokhtar_Resume.pdf" download="Marwan_Mokhtar_Resume.pdf">
+                  <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
+                  Download Resume
                 </a>
               </Button>
             </motion.div>
