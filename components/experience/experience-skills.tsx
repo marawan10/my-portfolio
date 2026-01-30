@@ -24,7 +24,7 @@ export function ExperienceSkills() {
       description: "Professional certification in AI model evaluation and code quality assessment"
     },
     {
-      title: "Language Model Reviewer Certification", 
+      title: "Language Model Reviewer Certification",
       issuer: "Outlier.ai",
       date: "2024",
       description: "Specialized training in language model assessment and improvement methodologies"
@@ -130,17 +130,17 @@ export function ExperienceSkills() {
                   <FileText className="w-8 h-8 text-white" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="font-semibold">Download Resume</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <h3 className="font-semibold">Download CV</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
                     Get a comprehensive overview of my experience and qualifications
                   </p>
+                  <Button asChild className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700">
+                    <a href="/assets/Marwan_Mokhtar_CV.pdf" download="Marwan_Mokhtar_CV.pdf">
+                      <Download className="w-4 h-4 mr-2" />
+                      Download PDF CV
+                    </a>
+                  </Button>
                 </div>
-                <Button asChild variant="gradient" className="w-full group">
-                  <a href="/assets/Marwan_Mokhtar.pdf" download="Marwan_Mokhtar_CV.pdf">
-                    <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
-                    Download PDF Resume
-                  </a>
-                </Button>
               </CardContent>
             </Card>
 
