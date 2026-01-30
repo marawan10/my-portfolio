@@ -11,10 +11,29 @@ const statusFilters = [
   { id: "paused", label: "Paused", icon: "⏸️" },
 ]
 
-const technologies = [
-  "Next.js", "TypeScript", "React", "Node.js", "Python", "C#", "SQL", 
-  "PostgreSQL", "Tailwind CSS", "Prisma", "ASP.NET Core", "JavaScript",
-  "Framer Motion", "shadcn/ui", "Entity Framework", "Bootstrap"
+const allTags = [
+  // Backend & Core (.NET Focus)
+  "C#",
+  ".NET Core",
+  "ASP.NET Core",
+  "Entity Framework",
+  "SQL Server",
+  "Web API",
+  "LINQ",
+  "Microservices",
+  "SQL",
+  "PostgreSQL",
+  "Python",
+  // Frontend
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Tailwind CSS",
+  "Framer Motion",
+  "shadcn/ui",
+  "Bootstrap",
+  "Prisma"
 ]
 
 function scrollToCategory(status: string) {
@@ -22,14 +41,14 @@ function scrollToCategory(status: string) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
     return
   }
-  
+
   const categoryMap: { [key: string]: string } = {
     "completed": "Completed",
-    "development": "In Development", 
+    "development": "In Development",
     "progress": "In Progress",
     "paused": "Paused"
   }
-  
+
   const targetStatus = categoryMap[status]
   const element = document.querySelector(`[data-category="${targetStatus}"]`)
   if (element) {
@@ -44,12 +63,12 @@ function handleFilterClick(event: React.MouseEvent<HTMLButtonElement>, filterId:
     btn.classList.remove('bg-primary', 'text-primary-foreground')
     btn.classList.add('border', 'border-input', 'bg-background')
   })
-  
+
   // Add active class to clicked button
   const target = event.currentTarget
   target.classList.remove('border', 'border-input', 'bg-background')
   target.classList.add('bg-primary', 'text-primary-foreground')
-  
+
   // Scroll to category
   scrollToCategory(filterId)
 }
@@ -75,11 +94,10 @@ export function ProjectsFilter() {
                   key={filter.id}
                   data-filter-button
                   onClick={(e) => handleFilterClick(e, filter.id)}
-                  className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 h-9 px-3 ${
-                    index === 0 
-                      ? 'bg-primary text-primary-foreground' 
-                      : 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'
-                  }`}
+                  className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 h-9 px-3 ${index === 0
+                    ? 'bg-primary text-primary-foreground'
+                    : 'border border-input bg-background hover:bg-accent hover:text-accent-foreground'
+                    }`}
                 >
                   <span className="mr-2">{filter.icon}</span>
                   {filter.label}
@@ -92,7 +110,7 @@ export function ProjectsFilter() {
           <div className="text-center space-y-4">
             <h3 className="text-lg font-semibold">Technologies I Use</h3>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-5xl mx-auto px-4">
-              {technologies.map((tech, index) => (
+              {allTags.map((tech, index) => (
                 <motion.div
                   key={tech}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -101,8 +119,8 @@ export function ProjectsFilter() {
                   transition={{ duration: 0.4, delay: index * 0.03 }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <Badge 
-                    variant="secondary" 
+                  <Badge
+                    variant="secondary"
                     className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-pointer hover:shadow-lg"
                   >
                     {tech}
