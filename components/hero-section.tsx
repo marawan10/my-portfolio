@@ -55,7 +55,7 @@ export function HeroSection() {
             }}
           />
         ))}
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       </div>
@@ -85,21 +85,13 @@ export function HeroSection() {
                   Software Engineer
                 </span>
               </motion.h1>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-lg sm:text-xl md:text-2xl text-muted-foreground space-y-2"
               >
-                <div className="flex items-center space-x-2">
-                  <span>Software Engineer</span>
-                  <span>•</span>
-                  <span>Full-Stack Developer</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span>AI Evaluator</span>
-                </div>
               </motion.div>
 
               <motion.p
@@ -108,9 +100,9 @@ export function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-lg text-muted-foreground leading-relaxed max-w-lg"
               >
-                Passionate about building innovative solutions with modern technologies. 
-                Experienced software engineer with expertise in full-stack development, 
-                AI integration, and modern web technologies.
+                Passionate about building enterprise-grade solutions using the .NET ecosystem.
+                I specialize in backend systems and leverage AI tools to deliver complete,
+                high-quality web applications.
               </motion.p>
             </div>
 
@@ -137,12 +129,6 @@ export function HeroSection() {
                 <a href="/assets/Marwan_Mokhtar_CV.pdf" download="Marwan_Mokhtar_CV.pdf">
                   <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
                   Download CV
-                </a>
-              </Button>
-              <Button asChild variant="ghost" size="lg" className="group">
-                <a href="/assets/Marwan_Mokhtar_Resume.pdf" download="Marwan_Mokhtar_Resume.pdf">
-                  <Download className="w-4 h-4 mr-2 group-hover:animate-bounce" />
-                  Download Resume
                 </a>
               </Button>
             </motion.div>
@@ -216,7 +202,7 @@ export function HeroSection() {
                   <div className="space-y-2 text-xs text-muted-foreground">
                     <div className="flex items-center justify-center space-x-2">
                       <MapPin className="w-3 h-3" />
-                      <span>Al Minya, Egypt</span>
+                      <span>Minia, Egypt</span>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <Calendar className="w-3 h-3" />
@@ -233,7 +219,7 @@ export function HeroSection() {
                   className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-border"
                 >
                   <div className="text-center">
-                    <p className="text-base sm:text-lg font-bold text-gradient">2+</p>
+                    <p className="text-base sm:text-lg font-bold text-gradient">1+</p>
                     <p className="text-xs text-muted-foreground">Years</p>
                   </div>
                   <div className="text-center">
