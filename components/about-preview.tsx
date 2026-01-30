@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export function AboutPreview() {
   const stats = [
-    { icon: Code, label: "Years Experience", value: "3+" },
+    { icon: Code, label: "Years Experience", value: "1+" },
     { icon: Brain, label: "Programming Languages", value: "5+" },
     { icon: Users, label: "Projects Completed", value: "10+" },
   ]
@@ -27,7 +27,7 @@ export function AboutPreview() {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Computer Science graduate with expertise in full-stack development, 
+            Computer Science graduate with expertise in full-stack development,
             modern web technologies, and software engineering practices.
           </p>
         </motion.div>
@@ -43,13 +43,13 @@ export function AboutPreview() {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold">Full-Stack Software Engineer</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm a Computer Science graduate from Minya University with a strong foundation 
-                in mathematics and programming. I have experience working with AI model evaluation 
+                I'm a Computer Science graduate from Minya University with a strong foundation
+                in mathematics and programming. I have experience working with AI model evaluation
                 and specialize in building modern web applications and software solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My expertise spans full-stack development, modern web technologies, and creating 
-                innovative software solutions. I'm passionate about building scalable, 
+                My expertise spans full-stack development, modern web technologies, and creating
+                innovative software solutions. I'm passionate about building scalable,
                 user-centric applications that solve real-world problems.
               </p>
             </div>
