@@ -6,22 +6,28 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function AboutEducation() {
   const education = {
-    degree: "Bachelor's Degree in Computer Science",
-    university: "Minya University",
+    degree: "Bachelor of Science in Computer Science",
+    university: "Minia University",
     location: "Egypt",
     graduation: "June 2025",
     achievements: [
-      "Strong foundation in mathematics and programming",
-      "Specialized in software engineering and web development",
-      "Developed expertise in multiple programming languages",
-      "Completed projects in software engineering and AI"
+      "Major: Computer Science | Minor: Mathematics",
+      "GPA: 2.68 / 4.00",
+      "Ranked 1st in Department (Major & Minor) (Class of 2025)",
+      "Specialized in AI and machine learning applications"
     ]
   }
 
   const certifications = [
     {
+      title: "Web Development Using .NET – ITI Summer Training",
+      issuer: "Information Technology Institute (ITI), Egypt",
+      year: "Jul – Aug 2024",
+      description: "60-hour intensive program covering ASP.NET Core, web architecture, and database integration. Achieved 100% score."
+    },
+    {
       title: "Computer Science Graduate",
-      issuer: "Minya University",
+      issuer: "Minia University",
       year: "2025",
       description: "Bachelor's degree with focus on software engineering and programming"
     }
@@ -77,7 +83,7 @@ export function AboutEducation() {
                     <span>Graduated: {education.graduation}</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-3">
                   <h4 className="font-medium">Key Achievements:</h4>
                   <ul className="space-y-2">
@@ -140,8 +146,8 @@ export function AboutEducation() {
                 <div className="text-center space-y-3">
                   <h4 className="font-semibold">Continuous Learning</h4>
                   <p className="text-sm text-muted-foreground">
-                    I believe in lifelong learning and staying updated with the latest 
-                    technologies and industry best practices. Currently exploring advanced 
+                    I believe in lifelong learning and staying updated with the latest
+                    technologies and industry best practices. Currently exploring advanced
                     AI techniques and modern web development frameworks.
                   </p>
                 </div>
