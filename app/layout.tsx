@@ -19,13 +19,14 @@ export const metadata: Metadata = {
   description: "Professional software engineer specializing in AI model evaluation, full-stack development, and modern web technologies. Expert in Python, C#, TypeScript, and AI systems.",
   keywords: [
     "Software Engineer",
-    "AI Specialist", 
+    "AI Specialist",
     "Full Stack Developer",
     "Python Developer",
     "TypeScript",
     "Next.js",
     "React",
-    "AI Coding Evaluator",
+    "C#",
+    ".NET Core",
     "Computer Science"
   ],
   authors: [{ name: "Marwan Mokhtar Kamel" }],
