@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function ExperienceHero() {
   const stats = [
-    { icon: Briefcase, label: "Years Experience", value: "2+" },
+    { icon: Briefcase, label: "Years Experience", value: "1+" },
     { icon: Award, label: "Roles", value: "2" },
     { icon: Calendar, label: "Available", value: "2025" },
     { icon: MapPin, label: "Location", value: "Remote" },
@@ -25,36 +25,12 @@ export function ExperienceHero() {
             Professional <span className="text-gradient">Experience</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            My journey in software engineering, from academic foundations 
+            My journey in software engineering, from academic foundations
             to professional experience in full-stack development and software solutions.
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto"
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-            >
-              <Card className="hover-lift text-center">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                    <stat.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <p className="text-2xl font-bold text-gradient mb-1">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </motion.div>
+
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,7 +45,7 @@ export function ExperienceHero() {
                 <p className="text-lg font-medium">Full-Stack Software Engineer</p>
                 <p className="text-primary font-medium">Available for Opportunities</p>
                 <p className="text-muted-foreground">
-                  Experienced in building scalable web applications, working with modern technologies, 
+                  Experienced in building scalable web applications, working with modern technologies,
                   and delivering high-quality software solutions.
                 </p>
               </div>
