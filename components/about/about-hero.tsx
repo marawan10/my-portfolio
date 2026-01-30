@@ -9,7 +9,7 @@ import Image from "next/image"
 export function AboutHero() {
   const personalInfo = [
     { icon: MapPin, label: "Location", value: "Al Minya, Egypt" },
-    { icon: Calendar, label: "Experience", value: "2+ Years" },
+    { icon: Calendar, label: "Experience", value: "1+ Years" },
     { icon: GraduationCap, label: "Education", value: "Computer Science Graduate" },
   ]
 
@@ -45,12 +45,10 @@ export function AboutHero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-lg text-muted-foreground leading-relaxed"
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
             >
-              I'm a passionate software engineer with a strong foundation in computer science 
-              and expertise in full-stack development. My journey combines academic excellence 
-              with practical experience in building innovative web applications and software solutions.
+              I am a dedicated .NET Developer with a strong Computer Science foundation. While my core expertise lies in backend engineering, architecture, and scalable solutions, I leverage modern AI tools to efficiently deliver full-stack applications, ensuring robust functionality with a polished user interface.
             </motion.p>
 
             <motion.div
