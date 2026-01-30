@@ -49,7 +49,7 @@ export function ContactHero() {
             Let's <span className="text-gradient">Connect</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to collaborate on your next project? I'm always excited to discuss 
+            Ready to collaborate on your next project? I'm always excited to discuss
             new opportunities, innovative ideas, and ways to bring your vision to life.
           </p>
         </motion.div>
@@ -93,10 +93,10 @@ export function ContactHero() {
                 <div className="space-y-2">
                   <h4 className="font-medium text-gradient">Development Services</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Full-stack web applications</li>
-                    <li>• AI-powered solutions</li>
-                    <li>• Database design & optimization</li>
-                    <li>• Code review & consultation</li>
+                    <li>• Enterprise Software Development (.NET)</li>
+                    <li>• AI-Enhanced Full-Stack Solutions</li>
+                    <li>• Backend Architecture & API Design</li>
+                    <li>• Database Optimization & Cloud Integration</li>
                   </ul>
                 </div>
                 <div className="space-y-2">
