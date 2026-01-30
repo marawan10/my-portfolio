@@ -1,158 +1,117 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { GraduationCap, Award, BookOpen, Calendar } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Download, MapPin, Calendar, GraduationCap } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
 
-export function AboutEducation() {
-  const education = {
-    degree: "Bachelor of Science in Computer Science",
-    university: "Minia University",
-    location: "Egypt",
-    graduation: "June 2025",
-    achievements: [
-      "Major: Computer Science | Minor: Mathematics",
-      "GPA: 2.68 / 4.00",
-      "Ranked 1st in Department (Major & Minor) (Class of 2025)",
-      "Specialized in AI and machine learning applications"
-    ]
-  }
-
-  const certifications = [
-    {
-      title: "Web Development Using .NET – ITI Summer Training",
-      issuer: "Information Technology Institute (ITI), Egypt",
-      year: "Jul – Aug 2024",
-      description: "60-hour intensive program covering ASP.NET Core, web architecture, and database integration. Achieved 100% score."
-    },
-    {
-      title: "Computer Science Graduate",
-      issuer: "Minia University",
-      year: "2025",
-      description: "Bachelor's degree with focus on software engineering and programming"
-    }
+export function AboutHero() {
+  const personalInfo = [
+    { icon: MapPin, label: "Location", value: "Al Minya, Egypt" },
+    { icon: Calendar, label: "Experience", value: "1+ Years" },
+    { icon: GraduationCap, label: "Education", value: "Computer Science Graduate" },
   ]
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gradient-to-br from-background via-background to-muted/20">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Education & <span className="text-gradient">Certifications</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Academic background and professional certifications that shaped my expertise
-          </p>
-        </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Education */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Card className="h-full hover-lift">
-              <CardHeader>
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                    <GraduationCap className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-xl">Education</CardTitle>
-                    <p className="text-sm text-muted-foreground">Academic Foundation</p>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold">{education.degree}</h3>
-                  <div className="flex items-center space-x-2 text-muted-foreground">
-                    <BookOpen className="w-4 h-4" />
-                    <span>{education.university}, {education.location}</span>
-                  </div>
-                  <div className="flex items-center space-x-2 text-muted-foreground">
-                    <Calendar className="w-4 h-4" />
-                    <span>Graduated: {education.graduation}</span>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <h4 className="font-medium">Key Achievements:</h4>
-                  <ul className="space-y-2">
-                    {education.achievements.map((achievement, index) => (
-                      <li key={index} className="flex items-start space-x-2 text-sm text-muted-foreground">
-                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mt-2 flex-shrink-0" />
-                        <span>{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          {/* Certifications */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <Card className="hover-lift">
-              <CardHeader>
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
-                    <Award className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-xl">Professional Certifications</CardTitle>
-                    <p className="text-sm text-muted-foreground">Industry Recognition</p>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                {certifications.map((cert, index) => (
-                  <motion.div
-                    key={cert.title}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                    className="border-l-2 border-gradient-to-b from-blue-500 to-purple-500 pl-4 space-y-2"
-                  >
-                    <div className="flex items-center justify-between">
-                      <h4 className="font-semibold">{cert.title}</h4>
-                      <span className="text-sm text-muted-foreground">{cert.year}</span>
-                    </div>
-                    <p className="text-sm font-medium text-primary">{cert.issuer}</p>
-                    <p className="text-sm text-muted-foreground">{cert.description}</p>
-                  </motion.div>
-                ))}
-              </CardContent>
-            </Card>
+            <div className="space-y-4">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="text-4xl md:text-5xl font-bold"
+              >
+                About <span className="text-gradient">Me</span>
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className="text-xl text-muted-foreground leading-relaxed"
+              >
+                Software Engineer
+              </motion.p>
+            </div>
 
-            {/* Additional Info */}
-            <Card className="glass">
-              <CardContent className="p-6">
-                <div className="text-center space-y-3">
-                  <h4 className="font-semibold">Continuous Learning</h4>
-                  <p className="text-sm text-muted-foreground">
-                    I believe in lifelong learning and staying updated with the latest
-                    technologies and industry best practices. Currently exploring advanced
-                    AI techniques and modern web development frameworks.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="text-lg text-muted-foreground leading-relaxed max-w-2xl"
+            >
+              I am a dedicated .NET Developer with a strong Computer Science foundation. While my core expertise lies in backend engineering, architecture, and scalable solutions, I leverage modern AI tools to efficiently deliver full-stack applications, ensuring robust functionality with a polished user interface.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-4"
+            >
+              {personalInfo.map((info, index) => (
+                <Card key={info.label} className="hover-lift">
+                  <CardContent className="p-4 text-center">
+                    <info.icon className="w-6 h-6 mx-auto mb-2 text-primary" />
+                    <p className="text-sm font-medium">{info.label}</p>
+                    <p className="text-xs text-muted-foreground">{info.value}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </motion.div>
+
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex justify-center"
+          >
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="relative group"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
+              <Card className="relative max-w-sm">
+                <CardContent className="p-8 text-center space-y-6">
+                  <div className="w-32 h-32 mx-auto relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full animate-pulse" />
+                    <div className="absolute inset-1 bg-background rounded-full flex items-center justify-center overflow-hidden">
+                      <Image
+                        src="/assets/My_Image.png"
+                        alt="Marwan Mokhtar"
+                        width={120}
+                        height={120}
+                        className="rounded-full object-cover"
+                        priority
+                      />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-background flex items-center justify-center">
+                      <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-semibold">Marwan Mokhtar Kamel</h3>
+                    <p className="text-muted-foreground">Software Engineer</p>
+                    <p className="text-sm text-muted-foreground">Available for Opportunities</p>
+                  </div>
+                  <div className="flex justify-center">
+                    <span className="px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-sm">
+                      Available for Work
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           </motion.div>
         </div>
       </div>
