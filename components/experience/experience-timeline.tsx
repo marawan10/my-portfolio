@@ -9,75 +9,69 @@ import { Button } from "@/components/ui/button"
 export function ExperienceTimeline() {
   const experiences = [
     {
-      id: "outlier-coding",
-      title: "AI Coding Evaluator",
-      company: "Outlier.ai",
-      location: "Remote",
-      period: "2024",
-      type: "Contract",
+      id: "thought-craft",
+      title: ".NET Developer / AI",
+      company: "Thought Craft Egypt",
+      location: "Cairo, Egypt",
+      period: "Jan 2026 - Present",
+      type: "Full-time",
       icon: Code,
       color: "from-blue-500 to-cyan-500",
-      description: "Evaluating and improving AI-generated code across multiple programming languages and frameworks, focusing on functionality, readability, and best practices.",
+      description: "Developing enterprise-grade applications and integrating AI tools into solutions.",
       responsibilities: [
-        "Review and assess AI-generated code for functionality, readability, and accuracy across various programming tasks",
-        "Provide targeted feedback to improve model performance on software development prompts",
-        "Collaborate with teams to refine evaluation standards and improve model alignment with human expectations",
-        "Analyze code quality metrics and contribute to training data optimization",
-        "Develop evaluation frameworks for different programming paradigms and languages"
+        "Develop and maintain enterprise-grade applications using C# and .NET Core, following best practices and scalable architecture principles",
+        "Integrate AI tools and LLM-powered features into internal and client-facing solutions",
+        "Collaborate with cross-functional teams to analyze requirements, design features, and implement solutions",
+        "Participate in code reviews and contribute to technical documentation for development processes"
       ],
-      skills: ["Python", "JavaScript", "Code Review", "AI Model Evaluation", "Quality Assurance"],
+      skills: ["C#", ".NET Core", "AI Integration", "LLMs", "Architecture"],
       achievements: [
-        "Evaluated 500+ AI-generated code samples with 95% accuracy",
-        "Improved model performance by 15% through detailed feedback",
-        "Developed standardized evaluation criteria for multiple programming languages"
+        "Integrated AI tools into enterprise solutions",
+        "Contributed to scalable architecture design"
       ]
     },
     {
-      id: "outlier-language",
-      title: "AI Language Model Reviewer",
-      company: "Outlier.ai",
-      location: "Remote", 
-      period: "2024",
+      id: "outlier",
+      title: "AI Data Trainer",
+      company: "Outlier AI",
+      location: "Remote (California, USA)",
+      period: "Dec 2024 – Oct 2025",
       type: "Contract",
       icon: Brain,
       color: "from-purple-500 to-pink-500",
-      description: "Specializing in evaluating AI-generated content in mathematics and programming contexts, ensuring clarity, logic, and instructional value.",
+      description: "Evaluated and improved AI and language models through structured code and reasoning reviews.",
       responsibilities: [
-        "Evaluate AI-generated text in both math and programming contexts for accuracy and clarity",
-        "Focus on clarity, logic, and instructional value of model outputs",
-        "Contribute to training data pipelines with high-quality annotations and performance evaluations",
-        "Analyze language model responses for technical accuracy and pedagogical effectiveness",
-        "Provide bilingual evaluation support for Arabic and English content"
+        "Evaluated and improved AI and language models through structured code and reasoning reviews",
+        "Provided high-quality feedback to enhance model clarity, accuracy, and reliability",
+        "Prepared, labeled, and validated diverse datasets for machine learning",
+        "Ensured consistency and compliance with data annotation standards across large-scale projects"
       ],
-      skills: ["NLP", "Technical Writing", "Mathematics", "Prompt Engineering", "Bilingual Analysis"],
+      skills: ["AI Model Training", "RLHF", "Code Analysis", "Data Annotation"],
       achievements: [
-        "Processed 1000+ language model evaluations with exceptional quality scores",
-        "Contributed to significant improvements in mathematical explanation generation",
-        "Established bilingual evaluation protocols for Arabic-English content"
+        "Evaluated AI models for clarity and accuracy",
+        "Validated diverse datasets for machine learning"
       ]
     },
     {
       id: "education",
       title: "Computer Science Student",
-      company: "Minya University",
+      company: "Minia University",
       location: "Al Minya, Egypt",
-      period: "2021 - 2025",
+      period: "Oct 2021 – Jun 2025",
       type: "Education",
       icon: Target,
       color: "from-green-500 to-emerald-500",
-      description: "Comprehensive computer science education with focus on programming, mathematics, and AI fundamentals.",
+      description: "Bachelor of Science in Computer Science. Major: Computer Science | Minor: Mathematics.",
       responsibilities: [
+        "Ranked 1st in Department (Major & Minor) (Class of 2025)",
+        "GPA: 2.68 / 4.00",
         "Completed coursework in algorithms, data structures, and software engineering",
-        "Specialized in artificial intelligence and machine learning concepts",
-        "Developed strong mathematical foundation including discrete mathematics and calculus",
-        "Participated in programming competitions and collaborative projects",
-        "Maintained excellent academic performance throughout the program"
+        "Specialized in artificial intelligence and machine learning concepts"
       ],
-      skills: ["Algorithm Design", "Data Structures", "Mathematics", "Research", "Academic Writing"],
+      skills: ["Algorithm Design", "Data Structures", "Mathematics", "Academic Writing"],
       achievements: [
-        "Graduated with Bachelor's Degree in Computer Science (June 2025)",
-        "Specialized in AI and machine learning applications",
-        "Completed multiple software engineering projects"
+        "Ranked 1st in Department",
+        "Graduated with Bachelor's Degree in Computer Science"
       ]
     }
   ]
@@ -116,7 +110,7 @@ export function ExperienceTimeline() {
               >
                 {/* Timeline dot */}
                 <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transform md:-translate-x-1/2 mt-6" />
-                
+
                 <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'} ml-12 md:ml-0`}>
                   <Card className="hover-lift group">
                     <CardHeader>
@@ -141,7 +135,7 @@ export function ExperienceTimeline() {
                         </div>
                       </div>
                     </CardHeader>
-                    
+
                     <CardContent className="space-y-6">
                       <p className="text-muted-foreground leading-relaxed">
                         {exp.description}
